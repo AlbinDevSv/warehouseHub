@@ -18,11 +18,11 @@ export default function RootLayout({
             <body>
                 {/* Navbar */}
                 <Navbar />
-                <section className="flex h-screen">
+                <section className="flex h-[calc(100vh-64px)]">
                     <div className="w-fit">
                         <Sidebar />
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 overflow-auto">
                         {/* Main */}
                         {children}
                     </div>
